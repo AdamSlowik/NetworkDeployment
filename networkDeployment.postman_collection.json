@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "092150b2-2495-4f5f-bcba-d88266b6c23d",
+		"name": "networkDeployment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7678413"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"macAddress\": \"aa:bb:cc:dd:ee:ff\",\n    \"deviceType\": \"SWITCH\"//,    \"uplinkMacAddress\": \"aa:bb:cc:dd:ee:ff\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/device",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDevice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/device/aa:bb:cc:dd:ee:ff",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"device",
+						"aa:bb:cc:dd:ee:ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:45623/api/tree",
+					"host": [
+						"localhost"
+					],
+					"port": "45623",
+					"path": [
+						"api",
+						"tree"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
