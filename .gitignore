@@ -1,4 +1,5 @@
 .gradle
+.idea/
 build/
 data/
 !gradle/wrapper/gradle-wrapper.jar
@@ -42,3 +43,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/.idea/
