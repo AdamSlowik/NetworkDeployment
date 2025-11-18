@@ -1,5 +1,5 @@
 .gradle
-.idea
+.idea/
 build/
 data/
 !gradle/wrapper/gradle-wrapper.jar
